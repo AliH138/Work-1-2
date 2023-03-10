@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main (String[] args){
+        Scanner input = new Scanner(System.in);
+        double h,m,s;
+        System.out.print("Enter Second: ");
+        double i = input.nextInt();
+        h=i/3600;
+        m=i/60;
+        s=i;
+        System.out.print("Hours = " + h + '\n' + "Minute = " + m + '\n' + "Second = " + s);
+    }
+}
