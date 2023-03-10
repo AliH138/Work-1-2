@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main (String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter first number : ");
+        int x = input.nextInt();
+        System.out.print("Enter secound number : ");
+        int y = input.nextInt();
+        int Sum = x+y;
+        int Minus = x-y;
+        int Multiplication = x*y;
+        int Division = x/y;
+        int Modulus = x%y;
+
+        System.out.print("sum = " + Sum + '\n' + "Minus = " + Minus + '\n'
+                + "Multiplication = " + Multiplication + '\n' + "Division = " + Division + '\n' + "Modulus = " + Modulus);
+    }
+}
