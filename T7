@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main (String[] args){
+        Scanner input =new Scanner(System.in);
+        System.out.print("Enter Three decimal numbers: ");
+        //1
+        double x = input.nextDouble();
+        double y = input.nextDouble();
+        double z = input.nextDouble();
+        double a = Math.pow(x , y);
+        double b = Math.pow(y , x);
+        double c = Math.abs(z);
+        double s = Math.round((a+b)/c);
+        System.out.println("1) "+s );
+        //2
+        double i = Math.exp(y);
+        double xz=x*z;
+        double j = Math.floor(i-Math.log(xz));
+        System.out.println("2) "+ j);
+        //3
+        double t = Math.ceil(Math.max(x,y)%Math.min(x,z));
+        System.out.println("3) "+ t);
+    }
+}
