@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main (String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the length of the rectangular yard: ");
+        int x=input.nextInt();
+        System.out.print("Enter the width of the rectangular yard: ");
+        int y=input.nextInt();
+        System.out.print("Enter the length of the house: ");
+        int xH=input.nextInt();
+        System.out.print("Enter the width of the house: ");
+        int yH=input.nextInt();
+        int yardArea=x*y;
+        int houseArea=xH*yH;
+        int yardSize=yardArea-houseArea;
+        double time=(yardSize/2.3)/60;
+        System.out.print("Yard area: "+yardArea+'\n'+"House area: "+houseArea+'\n'+"Yard size: "+yardSize
+        +'\n'+"Time require:"+time);
+    }
+}
