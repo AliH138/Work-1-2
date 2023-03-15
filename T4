@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main (String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the mileage: ");
+        double m = input.nextDouble();
+        System.out.print("Enter cost per liter of gas: ");
+        double CPLG = input.nextDouble();
+        System.out.print("Enter gas consumption rate(Liter per kilometer): ");
+        double GCR= input.nextDouble();
+        double travelExpenses = (double) ((m*GCR)*CPLG);
+        System.out.print("Your travel Expenses: "+travelExpenses);
+    }
+}
