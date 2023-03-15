@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main (String[] args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter numerator of the firs fraction: ");
+        double a = input.nextDouble();
+        System.out.print("Enter denominator of the firs fraction: ");
+        double b = input.nextDouble();
+        System.out.print("Enter numerator of the second fraction: ");
+        double c = input.nextDouble();
+        System.out.print("Enter denominator of the second fraction: ");
+        double d = input.nextDouble();
+        double x = a/b;
+        double y = c/d;
+        double z = x*y;
+        System.out.print("Result: "+z);
+    }
+}
